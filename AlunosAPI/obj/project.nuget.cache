@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tm2ptXv+yX7GLUxg7z/LeReyqK0SudvnIoB2OpKecXWUWFK0PyvQ8nEs60+I7OHNJMDB3xr5MOf65BGH3ALhPg==",
+  "dgSpecHash": "JgszwysXtEwVmmQ7oe2T3GeqaT/ssiMMYM0l5tzDDYO0pUWspUvT4uATrKm0xuFHsH+3cv5uWBble7/7cqo3zg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alunos\\Desktop\\Gab\\2° modulo\\Agosto\\1° semana 5-9\\Paulo\\AlunosAPI\\AlunosAPI\\AlunosAPI.csproj",
+  "projectFilePath": "C:\\Users\\Alunos\\Desktop\\Lara\\AlunosAPI\\AlunosAPI\\AlunosAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alunos\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\Alunos\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",

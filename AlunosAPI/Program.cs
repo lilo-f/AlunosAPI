@@ -1,22 +1,31 @@
+using AlunosAPI.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
 
-//Swagger
+//Realiza a leitura da conexão com o banco
+builder.Services.AddSingleton<PessoaRepository>(
+    provider => 
+    new PessoaRepository(builder.Configuration
+    .GetConnectionString("DefaultConnection")));
+
+//Swagger Parte 1
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();  
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-//Swagger Prte 2
-if (app.Environment.IsDevelopment())
+
+//Swagger Parte 2
+if(app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json","Crud Pessoa v1");
-        c.RoutePrefix= string.Empty;
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Crud Pessoa V1");
+        c.RoutePrefix = string.Empty;
     });
 }
 
